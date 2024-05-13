@@ -39,13 +39,20 @@
 // })
 // console.log(num2)
 
-let num1 = [12,13,14,24,85];
-let num2 = num1.map((value, index, array)=>{
-    console.log(value, index, array)
-    return value + 1; //[ 13, 14, 15, 25, 86 ]
-    // return value;  [ 12, 13, 14, 24, 85 ]
+// let num1 = [12,13,14,24,85];
+// let num2 = num1.map((value, index, array)=>{
+//     console.log(value, index, array)
+//     return value + 1; //[ 13, 14, 15, 25, 86 ]
+//     // return value;  [ 12, 13, 14, 24, 85 ]
 
-})
-console.log(num2)
+// })
+// console.log(num2)
 //map use krte hai jb nya array bnana hota hai
 //foreach use krte h jb ek operation krna hota h element k existing array pr
+
+//14.filter
+let num1 = [12,13,14,24,85];
+let newNum = num1.filter((a)=>{
+    return a<10
+});
+console.log(newNum, num1)
